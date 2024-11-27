@@ -1,0 +1,135 @@
+:root {
+    /* Universal Variables */
+    --pink: #ffb7c5;
+    --red: #550000;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    height: 100%;
+    line-height: 1.5;
+    margin: 0;
+    overflow-x: hidden;
+    color: var(--red);
+    font-family: 'Parkinsans', sans-serif;
+    min-width: 900px;
+    min-height: 600px;
+}
+
+h1 {
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    background: var(--pink);
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.grid-template {
+    display: grid;
+    position: relative;
+    min-height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.panda {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    grid-column: 3 / span 3;
+    justify-content: center;
+    align-items: center;
+    height: 554px;
+    width: 400px;
+    padding-top: 190px;
+
+}
+
+.panda-hat {
+    display: block;
+    position: relative;
+    z-index: 2;
+    grid-column: 3 / span 3;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 15vh; */
+
+}
+
+#menu {
+    display: inline-block;
+    position: relative;
+    margin-left: 10vh;
+    margin-top: 10vh;
+    font-weight: 200;
+    grid-column: 1 / span 1;
+}
+
+button {
+    display: block;
+    background: transparent;
+    border-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    min-width: 100px;
+    height: 13vh;
+    /* min-height: 100px; */
+    margin: 1vw;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(85, 0, 0, 0.2);
+    gap: 20px;
+}
+
+button:hover {
+    font-weight: 600;
+    box-shadow: 0 0 20px rgba(85, 0, 0, 0.5);
+}
+
+.active-btn {
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.panda-hat1 {
+    height: 340px;
+    width: 430px;
+    padding-right: 20px;
+}
+
+.panda-hat2 {
+    height: auto;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 110px;
+}
+
+.panda-hat3 {
+    height: auto;
+    width: 200px;
+    margin-top: 110px;
+}
+
+.panda-hat4 {
+    height: auto;
+    width: 250px;
+    margin-top: 100px;
+    margin-left: 65px;
+    
+}
+
+.panda-hat5 {
+    width: 370px;
+    padding-left: 40px;
+}
